@@ -8,12 +8,12 @@ $('.invio').click(
 
     var source = $('#entry-template').html();
     var template = Handlebars.compile(source);
-
+    // object invio
     var context = {
       'text': text,
       'invioricevi': 'invio',
     };
-
+    // stampo su html
     var html = template(context);
     $('#prova').append(html);
    // stampa msg ricevuto
@@ -21,11 +21,12 @@ $('.invio').click(
       var replay = 'come stai?';
       var source = $('#entry-template').html();
       var template = Handlebars.compile(source);
-
+      // object receveid
       var context = {
         'text': replay,
         'invioricevi': 'ricevi'
       };
+      // stampo su html
       var html = template(context);
       $('#prova').append(html);
 
