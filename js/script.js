@@ -55,4 +55,7 @@ var studenteObj = [
 ];
 for (var dati in studenteObj) {
   console.log(dati, studenteObj[dati]);
+  for (var i = 0; i < studenteObj[dati].length; i++) {
+    console.log();
+  }
 };
